@@ -1,4 +1,3 @@
-[index.html](https://github.com/user-attachments/files/35076449/index.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -257,11 +256,11 @@
 
   <header>
     <nav class="wrap nav" aria-label="Main">
-      <a href="#" class="logo">folio eighty one<span>.</span></a>
+      <a href="#" class="logo">folioeightyone<span>.</span></a>
       <ul>
         <li><a href="#books">books</a></li>
         <li><a href="#about">about</a></li>
-        <li><a href="#follow">follow</a></li>
+        <li><a href="#follow">social</a></li>
       </ul>
     </nav>
   </header>
@@ -372,16 +371,20 @@
       {
         category: "crossword",
         label: "Crossword",
-        title: "Crossword / 01",
-        desc: "Witty, wide-ranging clues on everything from history to the internet.",
-        meta: ["100 puzzles", "15 × 15 grids", "5.06 × 7.81 in", "Solutions included"],
+        title: "Crossword VOL. 01",
+        desc: "The Sunday Crossword, Any Day of the Week",
+        meta: ["100 puzzles", "15 × 15 grids", "American English", "Solutions included"],
         inside: [
-          "100 newspaper-style 15 × 15 crosswords",
-          "Clues on the left page, grid on the right",
-          "Topics from history and art to film, food and tech",
-          "No repeated answers or clues anywhere in the book",
+          "format: paperback",
+          "pages: 124",
+          "size: 5.06 × 7.81 in",
+          "isbn: ",
+          "published: 2026",
+          "language: english"
         ],
-        cover: "images/crossword-01.jpg",
+        cover: "<img width="1500" height="2250" alt="Crossword (Draft)" src="https://github.com/user-attachments/assets/9996fd24-b9cc-44b1-835b-3e42e70c8fed" />
+![Uploading Crossword (Draft).jpg…]()
+",
         color: "#b8321f",
         amazon: "https://www.amazon.com/dp/YOUR_ASIN",
         badge: "New",
@@ -432,7 +435,7 @@
             <p class="meta">${b.meta.map(esc).join(" · ")}</p>
             ${b.inside && b.inside.length ? `
               <details>
-                <summary>what's inside</summary>
+                <summary>Details</summary>
                 <ul>${b.inside.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
               </details>` : ""}
             ${b.amazon
